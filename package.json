@@ -1,0 +1,23 @@
+{
+  "name": "MID",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshad29/MID.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshad29/MID/issues"
+  },
+  "homepage": "https://github.com/anshad29/MID#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  }
+}
