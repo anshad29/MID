@@ -1,0 +1,91 @@
+.dala_vi{
+    display: flex;
+    .dala{
+        width: 50%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        .bg_image{
+           width: 100%;
+           height: 100vh;
+           position: relative;
+           background-image: url(/images/Rectangle14.png);
+           .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #000000, $alpha: .4);
+            } 
+        }
+        .dala_cnt{
+            width: 100%;
+            position: absolute; 
+         //    display: flex;
+            h1{
+             display: flex;
+             flex-flow: column;
+             color: #fff;
+            }
+            .dala_para{ 
+                p{
+                    font-size: 18px;
+                    color: #fff;
+                 }   
+                button{
+                    width: 250px;
+                    height: 50px;
+                }
+            }
+         }
+    }
+    .vi{
+        width: 50%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        .bg_image{
+           width: 100%;
+           height: 100vh;
+           position: relative;
+           background-image: url(/images/23.11.2020_11.28.22_REC.png);
+           .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #000000, $alpha: .4);
+            } 
+        }
+        .vi_cnt{
+            width: 100%;
+            position: absolute; 
+         //    display: flex;
+            h1{
+             display: flex;
+             flex-flow: column;
+             color: #fff;
+            }
+            h1:last-child{
+                text-align: end;
+            }
+            .vi_para{
+                p{
+                    font-size: 18px;
+                    color: #fff;
+                 }   
+                button{
+                    width: 250px;
+                    height: 50px;
+                }
+            }
+         }
+    }
+}
