@@ -97,10 +97,6 @@ footer {
   font-size: 120px;
 }
 
-.banner .container .banner_cnt h1:last-child {
-  align-items: flex-end;
-}
-
 .banner .container .banner_cnt .banner_para {
   display: flex;
 }
