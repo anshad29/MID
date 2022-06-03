@@ -18,6 +18,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
 header {
   width: 100%;
   background-position: center;
@@ -97,6 +107,14 @@ footer {
   font-size: 120px;
 }
 
+.banner .container .banner_cnt h1 span:nth-child(2) {
+  padding-left: 120px;
+}
+
+.banner .container .banner_cnt h1 span:nth-child(3) {
+  padding-left: 600px;
+}
+
 .banner .container .banner_cnt .banner_para {
   display: flex;
 }
@@ -114,6 +132,7 @@ footer {
 
 .fea-kar {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .fea-kar .featured {
@@ -130,7 +149,6 @@ footer {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url(/images/Rectangle12.png);
 }
 
 .fea-kar .featured .bg_image .overlay {
@@ -142,26 +160,44 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.fea-kar .featured .bg_image img {
+  object-fit: cover;
+}
+
 .fea-kar .featured .featured_cnt {
   width: 100%;
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.fea-kar .featured .featured_cnt h1 {
+.fea-kar .featured .featured_cnt h2 {
+  font-size: 80px;
   display: flex;
   flex-flow: column;
   color: #fff;
 }
 
 .fea-kar .featured .featured_cnt .featured_para p {
-  width: 350px;
+  align-items: center;
+  max-width: 350px;
   font-size: 18px;
   color: #fff;
+  margin: auto;
 }
 
 .fea-kar .featured .featured_cnt .featured_para button {
   width: 250px;
   height: 50px;
+}
+
+.fea-kar .featured.staggered h2 span:nth-child(1) {
+  margin-left: 0;
+}
+
+.fea-kar .featured.staggered h2 span:nth-child(2) {
+  padding-left: 75px;
 }
 
 .fea-kar .karin {
@@ -313,4 +349,56 @@ footer {
 .dala_vi .vi .vi_cnt .vi_para button {
   width: 250px;
   height: 50px;
+}
+
+.three-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.three-col .la-ma-an {
+  width: 640px;
+  height: 540px;
+  width: 33.33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.three-col .la-ma-an .bg_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.three-col .la-ma-an .bg_image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.three-col .la-ma-an .bg_image img {
+  object-fit: cover;
+}
+
+.three-col .la-ma-an .la-ma-an-cnt {
+  width: 100%;
+  position: absolute;
+}
+
+.three-col .la-ma-an .la-ma-an-cnt h3 span {
+  font-size: 80px;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+}
+
+.three-col .la-ma-an .la-ma-an-para p {
+  align-items: center;
+  font-size: 18px;
+  margin: auto;
 }

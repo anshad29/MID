@@ -1,5 +1,6 @@
 .fea-kar{
     display: flex;
+    flex-wrap: wrap;
     .featured{
         width: 50%;
         height: 100vh;
@@ -12,7 +13,7 @@
            width: 100%;
            height: 100vh;
            position: relative;
-           background-image: url(/images/Rectangle12.png);
+        //    background-image: url(/images/Rectangle12.png);
            .overlay{
             position: absolute;
             width: 100%;
@@ -21,27 +22,54 @@
             left: 0;
             background-color: rgba($color: #000000, $alpha: .4);
             } 
+            img{
+                object-fit: cover;
+            }
         }
         .featured_cnt{
             width: 100%;
             position: absolute; 
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
          //    display: flex;
-            h1{
+            h2{
+             font-size: 80px;   
              display: flex;
              flex-flow: column;
              color: #fff;
+             span{
+                 &:nth-child(1){
+
+                 }
+                 &:nth-child(2){
+                    //  padding-left: 90px;
+                 }
+             }
             }
             .featured_para{ 
                 p{
-                    width: 350px;
+                    align-items: center;
+                    max-width: 350px;
                     font-size: 18px;
                     color: #fff;
+                    margin: auto;
                  }   
                 button{
                     width: 250px;
                     height: 50px;
                 }
             }
+         }
+         &.staggered{
+             h2{
+                span:nth-child(1){
+                    margin-left: 0;
+                    }
+                span:nth-child(2){
+                padding-left: 75px;
+                }
+             }
          }
     }
     .karin{
