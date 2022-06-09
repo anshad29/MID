@@ -26,15 +26,46 @@ header{
                         display: inline-block;
                         padding: 8px 12px;
                         position: relative;  
+                        color:#ffffff;
+                        text-decoration: none;
+                        font-size: 13px; 
+                        .drop_down{
+                            position: absolute;
+                            width: max-content;
+                            background-color:#000;
+                            display: none;
+                            li{
+                                display: block;
+                                text-align: left;
+                                a{
+                                    color:#ffffff;
+                                    text-decoration: none;
+                                    font-size: 13px; 
+                                }
+                            }
+                        }
+                        &:hover{
+                            .drop_down{
+                                display: block;
+                            }
+                        }
                         a{
                             color:#ffffff;
                             text-decoration: none;
                             font-size: 13px; 
                         }
+                        // &:hover{
+                        //     border-top: 3px solid #fff;
+                        // }
                         
                     }
+                    &:hover{
+                        background-color: #000;
+                    }
+                     
                     .fa{
                         color: #ffffff;
+                        margin-right: 10px;
                     }
                 }
             }

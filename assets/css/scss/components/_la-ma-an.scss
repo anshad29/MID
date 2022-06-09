@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     .la-ma-an{
+        overflow: hidden;
         width: 640px;
         height: 540px;
         width: 33.33%;
@@ -23,28 +24,61 @@
             } 
             img{
                 object-fit: cover;
+                transition: .6s all ease-out;
+            }
+            .la-ma-an_cnt{
+                width: 100%;
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                h3{
+                  span{
+                      padding: 20px;
+                    font-size: 80px;
+                    color: #fff;
+                    display: flex;
+                    flex-flow: column;
+                    @media(max-width:1190px){
+                        font-size: 60px;
+                    }
+                  }
+                }
             }
         }
-        .la-ma-an-cnt{
-            width: 100%;
-            position: absolute;
-            h3{
-              span{
-                font-size: 80px;
-                color: #fff;
-                display: flex;
-                flex-flow: column;
-              }
+        .bg_image:hover{
+            img{
+
+                transform: scale(1.1);
             }
         }
         .la-ma-an-para{
             p{
                 align-items: center;
-                // max-width: 350px;
+                max-width: 365px;
                 font-size: 18px;
-                // color: #fff;
+                color: #fff;
                 margin: auto; 
+                @media(max-width:1190px){
+                    font-size: 12px;
+                }
             }
+            button{
+             padding: 10px;   
+            }
+        }
+        @media(max-width:1190px){
+            width: 50%;
+            height: 100%;
+        }
+        @media(max-width:990px){
+            width: 50%;
+            height: 100%;
+        }
+        @media(max-width:990px){
+            width: 100%;
+            height: 100%;
         }
     }
 }

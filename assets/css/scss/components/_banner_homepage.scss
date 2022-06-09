@@ -2,6 +2,18 @@
     width: 100%;
     height: 100vh;
     overflow-X: hidden;
+    @media(max-width:1190px){
+        width: 100%;
+        height: 100%;
+    }
+    @media(max-width:590px){
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+    }
     .bg_image{
         width: 100%;
         height: 100%;
@@ -34,7 +46,15 @@
            position: absolute; 
            top: 20%;
            color: #fff;
-        //    display: flex;
+           @media(max-width:1190px){
+              top:10%; 
+           }
+           @media(max-width:490px){
+                position: absolute;
+                align-items: center; 
+                align-items: center;
+                text-align: center;
+            }
            h1{
             display: flex;
             flex-flow: column;
@@ -42,34 +62,59 @@
             span{
                 &:nth-child(2){
                     padding-left: 120px;
+                    @media(max-width:590px){
+                        padding-left: 0;
+                    }
                 }
                 &:nth-child(3){
                     padding-left: 600px;
+                    @media(max-width:1190px){
+                        padding-left: 400px;
+                    }
+                    @media(max-width:590px){
+                        padding-left: 0;
+                    }
                 }
+                
             }
+            @media(max-width:990px){
+               font-size: 70px;
+            }
+            @media(max-width:990px){
+                width: 100%;
+            }
+            @media(max-width:590px){
+                font-size: 40px;
+            }
+
            }
            .banner_para{
                 display: flex;
-               p{
-                   max-width: 450px;
-                   font-size: 14px;
-                   margin-right: 200px;
-                }   
-               button{
-                   min-width: 250px;
-                   height: 50px;
-               }
-           }
+                @media(max-width:490px){
+                    flex-flow: column;
+                }
+                p{
+                    width: 450px;
+                    font-size: 14px;
+                    margin-right: 200px;
+                    @media(max-width:1190px){
+                       width: 50%;
+                       margin-right: 10%;
+                       font-size: 10px;
+                    }  
+                   @media(max-width:490px){
+                        width: 100%;
+                        margin-right: 0;
+                    } 
+                }
+                button{
+                width: 250px;
+                height: 50px;
+                @media(max-width:490px){
+                    width: 20%;
+             }
+                }
+            }
         }
     }
-
 }
-// header .container nav .nav-links ul li:first-child{
-//     position: relative;
-//     &::before{
-//         content: 'bef';
-//     }
-//     &::after{
-//         content: 'aft';
-//     }
-// }
