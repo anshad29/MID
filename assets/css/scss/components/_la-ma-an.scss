@@ -35,13 +35,15 @@
                 transform: translate(-50%,-50%);
                 h3{
                   span{
-                      padding: 20px;
                     font-size: 80px;
                     color: #fff;
                     display: flex;
                     flex-flow: column;
                     @media(max-width:1190px){
                         font-size: 60px;
+                    }
+                    @media(max-width:490px){
+                        font-size: 40px;
                     }
                   }
                 }
@@ -54,18 +56,31 @@
             }
         }
         .la-ma-an-para{
+            align-items: center;
+            @media(max-width:490px){
+                display: flex;
+                flex-flow: column;
+            }
             p{
                 align-items: center;
-                max-width: 365px;
+                width: 365px;
                 font-size: 18px;
                 color: #fff;
                 margin: auto; 
                 @media(max-width:1190px){
                     font-size: 12px;
                 }
+                @media(max-width:490px){
+                    width: 250px;
+                }
             }
             button{
-             padding: 10px;   
+                align-items: center;
+             padding: 10px; 
+             @media(max-width:490px){
+                 margin-bottom: 10px;
+                width: 173px;
+            }  
             }
         }
         @media(max-width:1190px){

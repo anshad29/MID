@@ -18,9 +18,45 @@ header{
                height: 100px;
                margin: auto; 
             }
+            .fa{
+                display: none;
+                color: #ffffff;
+                @media(max-width:760px){
+                    display: block;
+                    color: #ffffff;
+                    margin: 10px;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
             .nav-links{
                 text-align: right;
+                @media(max-width:760px){
+                    position: absolute;
+                    background-color: #000;
+                    height: 100vh;
+                    width: 100%;
+                    top: 0;
+                    right: -100%;
+                    text-align: left;
+                    z-index: 2;
+                    transition: 1s;
+                }
+                // .fa{
+                //     display: none;
+                     
+                //     @media(max-width:768px){
+                //         display: block;
+                //         color: #ffffff;
+                //         margin: 10px;
+                //         font-size: 22px;
+                //         cursor: pointer;
+                //     }
+                // }
                 ul{
+                    @media(max-width:760px){
+                        padding: 30px;
+                    }
                     li{
                         list-style: none;
                         display: inline-block;
@@ -29,6 +65,9 @@ header{
                         color:#ffffff;
                         text-decoration: none;
                         font-size: 13px; 
+                        @media(max-width:760px){
+                            display: block;
+                        }
                         .drop_down{
                             position: absolute;
                             width: max-content;

@@ -49,8 +49,43 @@ header .container nav img {
   margin: auto;
 }
 
+header .container nav .fa {
+  display: none;
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  header .container nav .fa {
+    display: block;
+    color: #ffffff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
 header .container nav .nav-links {
   text-align: right;
+}
+
+@media (max-width: 760px) {
+  header .container nav .nav-links {
+    position: absolute;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+}
+
+@media (max-width: 760px) {
+  header .container nav .nav-links ul {
+    padding: 30px;
+  }
 }
 
 header .container nav .nav-links ul li {
@@ -61,6 +96,12 @@ header .container nav .nav-links ul li {
   color: #ffffff;
   text-decoration: none;
   font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  header .container nav .nav-links ul li {
+    display: block;
+  }
 }
 
 header .container nav .nav-links ul li .drop_down {
@@ -105,6 +146,7 @@ footer {
 }
 
 footer .row {
+  align-items: center;
   text-align: center;
   justify-content: center;
 }
@@ -114,30 +156,56 @@ footer .row nav {
   justify-content: space-between;
 }
 
-footer .row h4 {
+@media (max-width: 490px) {
+  footer .row nav .logo img {
+    width: 43px;
+    height: 124px;
+  }
+}
+
+footer .row .col-md-3 {
+  align-items: center;
+  text-align: center;
+}
+
+footer .row .col-md-3 h4 {
   font-size: 40px;
   color: #fff;
 }
 
 @media (max-width: 1190px) {
-  footer .row h4 {
+  footer .row .col-md-3 h4 {
     font-size: 30px;
   }
 }
 
-footer .row p {
+footer .row .col-md-3 p {
+  align-items: center;
+  text-align: center;
   font-size: 14px;
   color: #fff;
 }
 
 @media (max-width: 1190px) {
-  footer .row p {
+  footer .row .col-md-3 p {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  footer .row .col-md-3 p {
+    width: 175px;
   }
 }
 
 footer .row > div {
   border-right: 1px solid #fff;
+}
+
+@media (max-width: 490px) {
+  footer .row > div {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 footer .row > div:last-child {
@@ -154,6 +222,12 @@ footer .row .col-md-3:nth-child(1) {
   justify-content: center;
 }
 
+@media (max-width: 490px) {
+  footer .row .col-md-3:nth-child(2) {
+    display: none;
+  }
+}
+
 .banner {
   width: 100%;
   height: 100vh;
@@ -163,7 +237,7 @@ footer .row .col-md-3:nth-child(1) {
 @media (max-width: 1190px) {
   .banner {
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 }
 
@@ -201,12 +275,15 @@ footer .row .col-md-3:nth-child(1) {
 
 @media (max-width: 1190px) {
   .banner .container .banner_cnt {
-    top: 10%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
   }
 }
 
 @media (max-width: 490px) {
   .banner .container .banner_cnt {
+    top: 15%;
     position: absolute;
     align-items: center;
     align-items: center;
@@ -224,7 +301,7 @@ footer .row .col-md-3:nth-child(1) {
   padding-left: 120px;
 }
 
-@media (max-width: 590px) {
+@media (max-width: 1190px) {
   .banner .container .banner_cnt h1 span:nth-child(2) {
     padding-left: 0;
   }
@@ -236,7 +313,7 @@ footer .row .col-md-3:nth-child(1) {
 
 @media (max-width: 1190px) {
   .banner .container .banner_cnt h1 span:nth-child(3) {
-    padding-left: 400px;
+    padding-left: 0;
   }
 }
 
@@ -282,27 +359,30 @@ footer .row .col-md-3:nth-child(1) {
 
 @media (max-width: 1190px) {
   .banner .container .banner_cnt .banner_para p {
-    width: 50%;
-    margin-right: 10%;
-    font-size: 10px;
+    text-align: center;
+    margin-right: 0;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 490px) {
   .banner .container .banner_cnt .banner_para p {
     width: 100%;
-    margin-right: 0;
+    width: 312px;
   }
 }
 
 .banner .container .banner_cnt .banner_para button {
   width: 250px;
   height: 50px;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 @media (max-width: 490px) {
   .banner .container .banner_cnt .banner_para button {
-    width: 20%;
+    width: 50%;
   }
 }
 
@@ -323,14 +403,14 @@ footer .row .col-md-3:nth-child(1) {
 @media (max-width: 1190px) {
   .fea-kar .featured {
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 }
 
 @media (max-width: 990px) {
   .fea-kar .featured {
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 }
 
@@ -376,6 +456,12 @@ footer .row .col-md-3:nth-child(1) {
   color: #fff;
 }
 
+@media (max-width: 490px) {
+  .fea-kar .featured .bg_image .featured_cnt h2 {
+    font-size: 40px;
+  }
+}
+
 .fea-kar .featured .bg_image .featured_cnt .featured_para p {
   padding: 20px;
   max-width: 350px;
@@ -391,6 +477,12 @@ footer .row .col-md-3:nth-child(1) {
 
 .fea-kar .featured.staggered h2 span:nth-child(2) {
   padding-left: 350px;
+}
+
+@media (max-width: 490px) {
+  .fea-kar .featured.staggered h2 span:nth-child(2) {
+    padding-left: 0;
+  }
 }
 
 .fea-kar .featured.staggered .featured_para p {
@@ -599,7 +691,6 @@ footer .row .col-md-3:nth-child(1) {
 }
 
 .three-col .la-ma-an .bg_image .la-ma-an_cnt h3 span {
-  padding: 20px;
   font-size: 80px;
   color: #fff;
   display: flex;
@@ -612,13 +703,30 @@ footer .row .col-md-3:nth-child(1) {
   }
 }
 
+@media (max-width: 490px) {
+  .three-col .la-ma-an .bg_image .la-ma-an_cnt h3 span {
+    font-size: 40px;
+  }
+}
+
 .three-col .la-ma-an .bg_image:hover img {
   transform: scale(1.1);
 }
 
+.three-col .la-ma-an .la-ma-an-para {
+  align-items: center;
+}
+
+@media (max-width: 490px) {
+  .three-col .la-ma-an .la-ma-an-para {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
 .three-col .la-ma-an .la-ma-an-para p {
   align-items: center;
-  max-width: 365px;
+  width: 365px;
   font-size: 18px;
   color: #fff;
   margin: auto;
@@ -630,8 +738,22 @@ footer .row .col-md-3:nth-child(1) {
   }
 }
 
+@media (max-width: 490px) {
+  .three-col .la-ma-an .la-ma-an-para p {
+    width: 250px;
+  }
+}
+
 .three-col .la-ma-an .la-ma-an-para button {
+  align-items: center;
   padding: 10px;
+}
+
+@media (max-width: 490px) {
+  .three-col .la-ma-an .la-ma-an-para button {
+    margin-bottom: 10px;
+    width: 173px;
+  }
 }
 
 @media (max-width: 1190px) {

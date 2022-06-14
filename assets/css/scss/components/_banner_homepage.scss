@@ -4,7 +4,8 @@
     overflow-X: hidden;
     @media(max-width:1190px){
         width: 100%;
-        height: 100%;
+        height: 100vh;
+
     }
     @media(max-width:590px){
         display: flex;
@@ -47,9 +48,12 @@
            top: 20%;
            color: #fff;
            @media(max-width:1190px){
-              top:10%; 
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%;
            }
            @media(max-width:490px){
+                top: 15%;
                 position: absolute;
                 align-items: center; 
                 align-items: center;
@@ -62,14 +66,14 @@
             span{
                 &:nth-child(2){
                     padding-left: 120px;
-                    @media(max-width:590px){
+                    @media(max-width:1190px){
                         padding-left: 0;
                     }
                 }
                 &:nth-child(3){
                     padding-left: 600px;
                     @media(max-width:1190px){
-                        padding-left: 400px;
+                        padding-left: 0;
                     }
                     @media(max-width:590px){
                         padding-left: 0;
@@ -89,7 +93,7 @@
 
            }
            .banner_para{
-                display: flex;
+                display: flex;                
                 @media(max-width:490px){
                     flex-flow: column;
                 }
@@ -98,23 +102,30 @@
                     font-size: 14px;
                     margin-right: 200px;
                     @media(max-width:1190px){
-                       width: 50%;
-                       margin-right: 10%;
-                       font-size: 10px;
+                        text-align: center;
+                        margin-right: 0;
+                    //    width: 50%;
+                    //    margin-right: 10%;
+                       font-size: 14px;
                     }  
                    @media(max-width:490px){
                         width: 100%;
-                        margin-right: 0;
+                        width: 312px;
+
                     } 
                 }
                 button{
                 width: 250px;
                 height: 50px;
+                text-align: center;
+                display: block;
+                margin: auto;
                 @media(max-width:490px){
-                    width: 20%;
-             }
+                    width: 50%;
+                }
                 }
             }
+                
         }
     }
 }

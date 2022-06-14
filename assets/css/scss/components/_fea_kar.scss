@@ -12,11 +12,11 @@
         flex-flow: column;
         @media(max-width:1190px){
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
         @media(max-width:990px){
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
         .bg_image{
            width: 100%;
@@ -51,6 +51,9 @@
              display: flex;
              flex-flow: column;
              color: #fff;
+             @media(max-width:490px){
+                 font-size: 40px;
+             }
             //  span{
             //      &:nth-child(2){
             //          padding-left: 90px;
@@ -78,6 +81,9 @@
             h2{
                 span:nth-child(2){
                     padding-left: 350px;
+                    @media(max-width:490px){
+                        padding-left: 0;
+                    }
                 }
             }
             .featured_para{

@@ -14,7 +14,8 @@
         <div class="container">
             <nav>
                 <a href=""><img src="/images/Group 3.svg" alt="logo"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-close" onclick="hideMenu()"></i>></i>
                     <ul>
                         <li><a href="">Program</a></li>
                         <li>Dalasinfoniettan
@@ -50,6 +51,7 @@
 
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
         </div>
     </header>
@@ -209,7 +211,8 @@
                 <img src="./images/Rectangle15.jpg" alt="image">
                 <div class="overlay"></div>
                 <div class="la-ma-an_cnt">
-                        <h3><span>LATEST CONCERTS</span></h3>
+                        <h3><span>LATEST </span>
+                        <span>CONCERTS</span></h3>
                         <div class="la-ma-an-para" >
                             <button>Boka biljetter <i class="fa fa-shopping-cart"></i></button>
                             <button>Boka biljetter <i class="fa fa-sign-in"></i></button>
@@ -226,7 +229,8 @@
                 <div class="overlay"></div>
                 <div class="la-ma-an_cnt">
                     <h3>
-                        <span>MALIN BROMAN</span>
+                        <span>MALIN </span>
+                        <span>BROMAN</span>
                     </h3>
                         <div class="la-ma-an-para">
                             <button>Boka biljetter <i class="fa fa-shopping-cart"></i></button>
@@ -243,7 +247,8 @@
                 <img src="./images/Rectangle17.jpg" alt="image">
                 <div class="overlay"></div>
                 <div class="la-ma-an_cnt">
-                        <h3><span>ANNAMIA LARSSON</span></h3>
+                        <h3><span>ANNAMIA </span>
+                        <span>LARSSON</span></h3>
                         <div class="la-ma-an-para">
                             <button>Boka biljetter <i class="fa fa-shopping-cart"></i></button>
                             <button>Boka biljetter <i class="fa fa-sign-in"></i></button>
@@ -260,7 +265,8 @@
                 <div class="overlay"></div>
                 <div class="la-ma-an_cnt">
                     <h3>
-                        <span>MALIN BROMAN</span>
+                        <span>MALIN </span>
+                        <span>BROMAN</span>
                     </h3>
                         <div class="la-ma-an-para">
                             <button>Boka biljetter <i class="fa fa-shopping-cart"></i></button>
@@ -278,7 +284,8 @@
                 <div class="overlay"></div>
                 <div class="la-ma-an_cnt">
                     <h3>
-                        <span>MALIN BROMAN</span>
+                        <span>MALIN </span>
+                        <span>BROMAN</span>
                     </h3>
                         <div class="la-ma-an-para">
                             <button>Boka biljetter <i class="fa fa-shopping-cart"></i></button>
@@ -296,7 +303,8 @@
                 <div class="overlay"></div>
                 <div class="la-ma-an_cnt">
                     <h3>
-                        <span>MALIN BROMAN</span>
+                        <span>MALIN </span>
+                        <span>BROMAN</span>
                     </h3>
                         <div class="la-ma-an-para">
                             <button>Boka biljetter <i class="fa fa-shopping-cart"></i></i></button>
@@ -338,5 +346,17 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- java script -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-100%"; 
+        }
+    </script>
 </body>
 </html>
